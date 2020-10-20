@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inputs</title>
+</head>
+<body>
+
+<form>
+
+    <!--  Radio button  -->
+    <!--  set a checkbox or radio button to be checked by default using the checked attribute  -->
+    <label for="indoor">Indoor</label>
+    <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>
+
+    <label for="outdoor">Outdoor</label>
+    <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">
+
+    <!--  select - drop down menu  -->
+    <br>    <!-- Line break -->
+    <label for="agestage">Choose Age Stage</label>
+    <select id="agestage" name="agestage">
+        <option value="Kid">Below 13</option>
+        <option value="Teenager">13-19</option>
+        <option value="Adult">Above 19</option>
+    </select>
+
+    <!--  Textarea  -->
+    <br>
+    <label for="feedback">Feedback</label>
+    <textarea name="feedback" id="feedback" cols="30" rows="10">Pre-written text</textarea>
+
+    <!--    If the button is the last element in the form then it works
+            the same as input with type submit & could submit the form  -->
+    <button>OK</button>
+
+</form>
+
+</body>
+</html>
