@@ -1,0 +1,78 @@
+
+---------------------------------------------------------------------------------------
+IMPORTANT Notes
+---------------------------------------------------------------------------------------
+
+0. Lorem Ipsum Placeholder text
+-------------------------------
+
+Web developers traditionally use lorem ipsum text as placeholder text. The lorem ipsum text is randomly scraped from a famous passage by Cicero of Ancient Rome.
+
+Lorem ipsum text has been used as placeholder text by typesetters since the 16th century, and this tradition continues on the web.
+
+_______________________________________________________________________________________
+
+1. Case Insensitive:
+--------------------
+As a convention, all HTML tags are written in lowercase, for example <p></p> and not <P></P>
+_______________________________________________________________________________________
+
+
+2. Alt attribute of img element:
+--------------------------------
+
+If the image is purely decorative, using an empty alt attribute is a best practice.
+Ideally the alt attribute should not contain special characters unless needed.
+_______________________________________________________________________________________
+
+3. Anchor element:
+------------------
+
+1. target attribute ->
+    is an anchor tag attribute that specifies where to open the link
+    target="_blank" attribute of the anchor tag causes the linked document to open in a new window tab.
+2. href attribute -> it is an anchor tag attribute that contains the URL address of the link
+3. Anchor Text ->
+    Consider this example: <a href=" ... ">link to freecodecamp.org</a>
+    The text "link to freecodecamp.org" within the 'a' element is called anchor text, which will display a link to click.
+4. Dead Link ->
+    Sometimes you want to add a elements to your website before you know where they will link.
+    This is also handy when you're changing the behavior of a link using JavaScript.
+    Hence, Set the href attribute value with a "#", also known as a hash symbol, to create a dead link.
+    E.g. <a href="#">Dead Link</a>
+5. Hover ->
+    hover over element within an 'a' (anchor) element with the cursor. The cursor's normal pointer should become the link clicking pointer. The entire element enclosed by the anchor tag will turn into a link.
+
+_______________________________________________________________________________________
+
+4. Input element:
+-----------------
+
+1. input elements are self-closing.
+2.  name attribute ->
+    it simply refers to the group name which the set of input elements follows.
+    E.g.: name="indoor-outdoor"
+    In this example, input elements with the name value as "indoor-outdoor" belongs to the same group.
+    In other words, when 1 radio button is selected then other radio buttons of the same group will automatically be deselected.
+
+_______________________________________________________________________________________
+
+5. Label element:
+-----------------
+
+1.  label element ->
+    label element simply wraps the input and span elements, binding them into a single unit.
+    Whenever one clicks on span element, it'll be treated as if one clicked on the entire label element and not just the span element.
+
+2.  By wrapping up the input and span element with label element, it associates span with the input element.
+    It allows the radio button to be clicked even when the user clicks on the text of the span element enclosed by the label element.
+    In case of input ain't wrapped by the label element, clicking on the span element with the "Indoor" text won't trigger the radio button. It'll be triggered only when the user explicitly clicks on the radio button icon.
+
+3.  Mouse Hover Effect ->
+    when text is wrapped with label element, Mouse Cursor doesn't changes to Editting Mouse Pointer but when it ain't wrapped with label element then hovering over the text changes to Editting Mouse Pointer.
+
+4.  for attribute ->
+    it simply tells which element to be triggered when the label element is clicked.
+    for attribute with the value "indoor" binds the current label element with the one whose id is "indoor"
+    Hence, when clicked on the Indoor text of the label element, it triggers that element whose id matches
+    with the one specified by the for attribute i.e. "indoor"
