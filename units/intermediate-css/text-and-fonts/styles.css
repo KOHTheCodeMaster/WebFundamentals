@@ -1,0 +1,28 @@
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: "Arial Black", sans-serif;
+    text-align: center;
+
+    /* 3em -> 3 * font size of the parent element */
+    font-size: 4em;
+}
+
+p {
+    font-family: cursive, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: center;
+
+}
+
+p span {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
