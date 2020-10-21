@@ -1,0 +1,17 @@
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+#grocery {
+    border: red 2px solid;
+    color: darkgoldenrod;
+}
+
+.bought {
+    text-decoration: line-through;
+}
+.pending {
+    text-decoration: ActiveCaption;
+}
