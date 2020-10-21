@@ -1,0 +1,30 @@
+
+/* Star Selector */
+* {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Descendant Selector */
+li a {
+    color: cyan;
+}
+
+/* Adjacent Selector */
+h1 + a {
+    color: red;
+}
+
+/* Attribute Selector */
+a[href="http://www.youtube.com"] {
+    color: orange;
+}
+
+/* nth-of-type Selector */
+li:nth-of-type(even){
+    color: greenyellow;
+}
+li:nth-of-type(2){
+    color: yellow;
+}
+
