@@ -1,0 +1,25 @@
+
+body {
+    /* stretch the image to cover the complete page */
+    background-size: cover;
+
+    /* no-repeat indicates not to repeat the image as tiles if its too short for the page */
+    background: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg") no-repeat;
+
+    /* text color */
+    color: #fff;
+}
+
+h2 {
+    border: red 2px solid;
+    color: darkgoldenrod;
+}
+
+ol {
+    border: 2px lightgreen double;
+}
+
+ul {
+    background-color: rgba(200, 200, 200, 0.1);
+    border: 2px dashed rgba(200, 200, 200, 0.1);
+}
