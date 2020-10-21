@@ -1,0 +1,29 @@
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: Lemonada, "Arial Black", sans-serif;
+    text-align: center;
+
+    /* 3em -> 3 * font size of the parent element */
+    font-size: 4em;
+}
+
+p {
+    /* Wrap the font name with double quotes if its more than 1 word */
+    font-family: "Sansita Swashed", sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+p span {
+    font-family: Lemonada, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
