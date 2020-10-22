@@ -1,0 +1,34 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lemonada, cursive;
+    background-image: url("https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+h1 {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    color: aqua;
+    text-align: center;
+    border-bottom: 2px solid deepskyblue;
+}
+
+.gallery-container {
+    height: 100vh;
+}
+
+img {
+    float: left;
+    width: 30%;
+    height: 60%;
+    /* Remaining of 10% is divided by 6 (pair of side margins for 3 images) */
+    margin: 1.66%;
+    border: 2px solid white;
+}
+
