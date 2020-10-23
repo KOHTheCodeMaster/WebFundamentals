@@ -1,0 +1,46 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lemonada, cursive;
+    margin: auto;
+    padding: 20px;
+    width: 75%;
+    border: 20px solid lightskyblue;
+    background-color: black;
+    color: white;
+}
+
+.date {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: aqua;
+}
+
+.article-title {
+    margin: 20px auto;
+    font-weight: 800;
+    font-size: 1.5em;
+    color: orange;
+}
+
+.quote {
+    border-left: 5px solid red;
+    padding: 5px 10px;
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+hr {
+    margin: 20px 0;
+    height: 1px;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 255, 100, 0.75), rgba(255, 255, 255, 0));
+}
