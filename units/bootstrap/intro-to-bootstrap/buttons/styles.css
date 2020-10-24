@@ -1,0 +1,21 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+div {
+    border: 2px solid grey;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 1px solid lightblue;
+}
