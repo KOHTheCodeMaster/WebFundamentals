@@ -1,0 +1,26 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    border: 2px solid grey;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.form-control {
+    background-color: darkslategray;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 1px solid lightblue;
+}
