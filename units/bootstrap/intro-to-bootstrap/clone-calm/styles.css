@@ -1,0 +1,88 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background-img-container {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://res.cloudinary.com/calm-com/image/upload/f_auto,c_scale,w_1920,dpr_auto,q_auto/v1582139698/jasper-lake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -70px;
+    filter: brightness(75%);
+    position: absolute;
+    /*bottom: 20vh;*/
+    z-index: -1;
+}
+
+/*  Navbar
+===============*/
+
+.navbar-brand {
+    width: 5em;
+    height: 2.5em;
+}
+
+.navbar button {
+    padding: 0.5rem 1.4rem;
+    margin-left: 0.5rem;
+    height: 3.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 100px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.navbar button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.navbar .special-btn {
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+main .container {
+    /*width: 100%;*/
+    /*height: 50%;*/
+    margin-top: 12%;
+    padding: 0;
+    font-weight: lighter;
+    /*border: 10px solid green;*/
+    /*z-index: 2;*/
+}
+
+main h1 {
+    font-size: 3rem;
+}
+
+main button {
+    margin-top: 10px;
+    padding: 20px;
+    width: 29%;
+    background: linear-gradient(rgb(96, 180, 231) 0%, rgb(100, 97, 224) 100%);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+main button:hover {
+    opacity: 0.9;
+    transition: 0.5s;
+}
