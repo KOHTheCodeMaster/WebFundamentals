@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--  Meta tag  -->
+    <meta charset="UTF-8">
+
+    <!-- Title -->
+    <title>Score Keeper</title>
+
+    <!--  Import CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!--  Import JS  -->
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+<main class="container mt-5">
+
+    <div id="scoreboard" class="display-1 text-center">0 - 0</div>
+
+    <div id="best-of-n" class="display-4 text-center">Best Of 5</div>
+
+    <div class="d-flex justify-content-center mt-4">
+
+        <div class="p-1">
+            <label for="input-best-of-n"></label>
+            <input id="input-best-of-n" type="number">
+        </div>
+
+        <div class="">
+            <button id="btn-player-one" class="mx-2 btn btn-info">Player One</button>
+            <button id="btn-player-two" class="mx-2 btn btn-danger">Player Two</button>
+            <button id="btn-reset" class="mx-2 btn btn-dark">Reset</button>
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
