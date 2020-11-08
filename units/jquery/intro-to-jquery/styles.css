@@ -1,0 +1,21 @@
+
+* {
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.heading {
+    font-size: 4em;
+    font-weight: bolder;
+    border-bottom: 2px dashed grey;
+}
+
+.bigtext {
+    font-size: 2em;
+}
