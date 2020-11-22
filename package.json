@@ -1,6 +1,24 @@
 {
+  "name": "webfundamentals",
+  "version": "1.0.0",
+  "description": "Web Fundamentals - 100 Days Of Code",
+  "main": "index.js",
   "dependencies": {
     "cat-me": "^1.0.3",
+    "express": "^4.17.1",
     "faker": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KOHTheCodeMaster/WebFundamentals.git"
+  },
+  "keywords": [
+    "100daysofcode"
+  ],
+  "author": "kohthecodemaster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KOHTheCodeMaster/WebFundamentals/issues"
+  },
+  "homepage": "https://github.com/KOHTheCodeMaster/WebFundamentals#readme"
 }
