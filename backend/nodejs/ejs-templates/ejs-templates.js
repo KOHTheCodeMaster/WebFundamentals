@@ -12,16 +12,18 @@ app.get("/", function (req, res) {
 //  Movie page route with simple pattern
 app.get("/movie/:movieName", function (req, res) {
     let movieName = req.params.movieName;
-    res.send("Movie Page.\nMovie Name : " + movieName);
+    res.render("simple.ejs", {movieName: movieName});
 });
 
-//  Posts page with complicated route pattern
-app.get("/posts/:id/tag/:tagName", function (req, res) {
-    let id = req.params.id;
-    let tagName = req.params.tagName;
-    res.send("Posts Page." +
-        "id: " + id +
-        "tagName: " + tagName);
+//  Test route - create list at runtime using ejs template
+app.get("/test", function (req, res) {
+
+    let links = ["Facebook.com",
+        "Google.com",
+        "Youtube.com"];
+
+    res.render("list.ejs", {links: links});
+
 });
 
 //  All other routes

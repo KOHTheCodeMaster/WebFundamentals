@@ -1,0 +1,24 @@
+<h1>List Size : <%= links.length %></h1>
+
+<!-- Using for loop -->
+<ul>
+    <% for (let i = 0; i < links.length; i++) { %>
+
+        <li>
+            <a href="https://www.<%= links[i] %>"><%= links[i] %></a>
+        </li>
+
+    <% } %>
+</ul>
+
+<!-- Using forEach method -->
+<ol>
+    <% links.forEach(function (item) { %>
+
+        <li>
+            <a href="https://www.<%= item %>"><%= item %></a>
+        </li>
+
+    <% }); %>
+</ol>
+
