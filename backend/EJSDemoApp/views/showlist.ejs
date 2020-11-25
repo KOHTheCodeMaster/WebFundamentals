@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<h1>Item List</h1>
+
+
+<!-- Display itemList using forEach method -->
+<ul>
+    <% itemList.forEach(function(item) { %>
+        <li>
+            <%= item %>
+        </li>
+    <% }); %>
+</ul>
+
+<!-- Form for adding new item to the list -->
+<form action="addNewItem" method="post">
+    <label for="new-item-input"></label>
+    <input id="new-item-input" type="text" name="newItem">
+    <button>Add New Item</button>
+</form>
+
+<%- include('partials/footer') %>
