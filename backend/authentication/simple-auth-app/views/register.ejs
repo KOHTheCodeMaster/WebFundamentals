@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<main>
+    <!--  Register Form  -->
+    <div>
+        <form action="/register" method="post">
+            <label for="username-input">Username</label>
+            <input id="username-input" name="username" type="text">
+            <label for="password-input">Password</label>
+            <input id="password-input" name="password" type="password">
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <!--  Login Btn.  -->
+    <div>
+        <p>Already have an Account?</p>
+        <button>Login</button>
+    </div>
+</main>
+
+<%- include('partials/footer') %>
