@@ -45,6 +45,17 @@ app.get("/", function (req, res) {
     res.redirect("/register");
 });
 
+// Render Home Page
+app.get("/home", isLoggedIn, function (req, res) {
+    res.render("home", {user: loggedInUser});
+});
+
+// Logout route
+app.get("/logout", function (req, res) {
+    req.logout();
+    res.redirect("/");
+});
+
 // Register Routes
 // ---------------
 
@@ -64,6 +75,7 @@ app.post("/register", function (req, res) {
         }
         //  Update loggedInUser on successful login
         loggedInUser = user;
+        console.log("Registration successful - " + loggedInUser.username);
 
         //  Authenticate user & render home page
         //  Doubt: Strange method parameter syntax
@@ -74,14 +86,6 @@ app.post("/register", function (req, res) {
 
 });
 
-// Home Routes
-// ------------
-
-// Render Home Page
-app.get("/home", function (req, res) {
-    res.render("home", {user: loggedInUser});
-});
-
 // Login Routes
 // ------------
 
@@ -89,22 +93,31 @@ app.get("/home", function (req, res) {
 app.get("/login", function (req, res) {
     res.render("login");
 });
-4
+
 // Login page route
 app.post("/login", passport.authenticate("local", {
     // successRedirect: "/home",    //  Unable to pass args
     failureRedirect: "/register"
 }), function (req, res) {
-    User.find({username: req.body.username}, function (err, user) {
-        if (err) console.log(err);
-        else {
-            loggedInUser = user;
-            console.log("Logged in successful - " + loggedInUser.username);
-            res.redirect("/home");
+    //  Find the user logged in db
+    User.findOne({username: req.body.username}, function (err, user) {
+        if (err) {
+            console.log(err);
+            return;
         }
+        // Update loggedInUser
+        loggedInUser = user;
+        console.log("Successfully Logged in - " + loggedInUser.username);
+        // Redirect to /home route
+        res.redirect("/home");
     });
 });
 
+//  Define isLoggedIn() middleware to be executed before /logout route
+function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated()) next();
+    else res.redirect("/login");
+}
 
 //  Boot the Server
 app.listen(3000, function () {
