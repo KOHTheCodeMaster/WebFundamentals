@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "./build",
+    //    "inlineSource": true,
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./**/*"
+  ]
+}
